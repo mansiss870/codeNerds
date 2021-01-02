@@ -1,0 +1,29 @@
+<p>Given two words word1 and word2, find the minimum number of operations required to convert word1 to word2.
+<br/>
+You have the following 3 operations permitted on a word:
+<br/>
+<ul>
+<li>Insert a character</li>
+<li>Delete a character</li>
+<li>Replace a character</li>
+</ul>
+<br><br>
+<b>Example 1:</b></br>
+<b>Input:</b><br/>
+word1 = "horse", word2 = "ros" <br/><br>
+<b>Output:</b><br/>
+3 <br/><br>
+<b>Explanation: </b><br/>
+horse -> rorse (replace 'h' with 'r')<br/>
+rorse -> rose (remove 'r')<br/>
+rose -> ros (remove 'e')<br/>
+<br/><br>
+<b>Example 2:</b><br/>
+<b>Input:</b> <br/> word1 = "intention", word2 = "execution"</br><br>
+<b>Output: </b><br>5<br/><br>
+<b>Explanation:</b> <br>
+intention -> inention (remove 't')
+inention -> enention (replace 'i' with 'e')<br/>
+enention -> exention (replace 'n' with 'x')<br/>
+exention -> exection (replace 'n' with 'c')<br/>
+exection -> execution (insert 'u')<br/></p>

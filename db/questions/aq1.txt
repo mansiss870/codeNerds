@@ -1,0 +1,31 @@
+﻿<p>Given two sequences, find the length of longest subsequence present in both of them. Both the strings are of uppercase.</br>
+
+<b>Input:</b></br>
+First line of the input contains no of test cases  T,the T test cases follow.</br>
+Each test case consist of 2 space separated integers A and B denoting the size of string str1 and str2 respectively</br>
+The next two lines contains the 2 string str1 and str2.</br><br>
+
+<b>Output:</b></br>
+For each test case print the length of longest  common subsequence of the two strings .</br><br>
+
+<b>Constraints:</b></br>
+1&leq;T&leq;200</br>
+1&leq;size(str1),size(str2)&leq;100</br><br>
+
+<b>Example:</b></br>
+<b>Input:</b></br>
+2</br>
+6 6</br>
+ABCDGH</br>
+AEDFHR</br>
+3 2</br>
+ABC</br>
+AC</br><br>
+
+<b>Output:</b></br>
+3</br>
+2</br><br>
+
+<b>Explanation :</b></br>
+LCS for input Sequences “ABCDGH” and “AEDFHR” is “ADH” of length 3.</br>
+LCS of "ABC" and "AC" is "AC" of length 2</br></p>

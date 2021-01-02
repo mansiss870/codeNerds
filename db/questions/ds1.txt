@@ -1,0 +1,28 @@
+﻿<p>Given an array A of positive integers. Count number of smaller elements on right side of each array.<br/>
+
+<b>Input:</b><br/>
+The first line of input contains an integer T denoting the number of test cases. The first line of each test case is N,N is the size of array. The second line of each test case contains N input arr[i].<br/><br>
+
+<b>Output:</b><br/>
+Print the countSmaller array.<br/><br>
+
+<b>Constraints:</b><br/>
+1 &leq; T &leq; 100<br/>
+1  &leq; N &leq; 106<br/>
+1 &leq; Ai  &leq; 108<br/><br>
+
+<b>Example:</b><br/>
+<b>Input:</b><br/>
+2<br/>
+7<br/>
+12 1 2 3 0 11 4<br/>
+5<br/>
+1 2 3 4 5<br/><br>
+
+<b>Output:</b><br/>
+6 1 1 1 0 1 0<br/>
+0 0 0 0 0<br/><br>
+
+<b>Explanation:</b><br/>
+<b>Testcase 1:</b><br/>6 elements are greater than 1 on its right side in original array. Similarly 1 element is greater than 4 on its right side in original array.
+<br/><br></p>

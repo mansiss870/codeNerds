@@ -1,0 +1,71 @@
+function validation(frm)
+{
+var fn=frm.firstName.value;
+if(fn.trim().length==0)
+{
+document.getElementById("firstName").value="first name required";
+frm.firstName.classList.add("is-invalid");
+frm.firstName.classList.remove("is-valid");
+return false;
+}
+frm.firstName.classList.add("is-invalid");
+frm.firstName.classList.remove("is-valid");
+var vv="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz,. ";
+var x=0;
+while(x<fn.length)
+{
+if(vv.indexOf(fn.charAt(x))==-1)
+{
+document.getElementById("firstName").value="Invalid first name";
+frm.firstName.classList.add("is-invalid");
+frm.firstName.classList.remove("is-valid");
+
+return false;
+}
+frm.firstName.classList.add("is-invalid");
+frm.firstName.classList.remove("is-valid");
+x++; 
+}
+var ln=frm.lastName.value;
+if(ln.trim().length==0)
+{
+document.getElementById("lastName").value="last name required";
+frm.lastName.classList.add("is-invalid");
+frm.lastName.classList.remove("is-valid");
+return false;
+}
+frm.lastName.classList.add("is-invalid");
+frm.lastName.classList.remove("is-valid");
+var vv="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz,. ";
+var x=0;
+while(x<ln.length)
+{
+if(vv.indexOf(ln.charAt(x))==-1)
+{
+document.getElementById("lastName").value="Invalid last name";
+frm.lastName.classList.add("is-invalid");
+frm.lastName.classList.remove("is-valid");
+
+return false;
+}
+frm.lastName.classList.add("is-invalid");
+frm.lastName.classList.remove("is-valid");
+x++; 
+}
+var pwd=frm.inputPassword.value;
+var rpwd=frm.repeatPassword.value;
+if(pwd!=rpwd)
+{
+document.getElementById("inputPassword").value="Password doesn't match";
+frm.inputPassword.classList.add("is-invalid");
+frm.inputPassword.classList.remove("is-valid");
+frm.repeatPassword.classList.add("is-invalid");
+frm.repeattPassword.classList.remove("is-valid");
+return false;
+}
+frm.inputPassword.classList.add("is-valid");
+frm.inputPassword.classList.remove("is-invalid");
+frm.repeatPassword.classList.add("is-valid");
+frm.repeattPassword.classList.remove("is-invalid");
+return true;
+}

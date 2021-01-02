@@ -1,0 +1,27 @@
+﻿<p>Given an array arr of N integers. Find the contiguous sub-array with maximum sum.<br/>
+
+<b>Input:</b><br/>
+The first line of input contains an integer T denoting the number of test cases. The description of T test cases follows. The first line of each test case contains a single integer N denoting the size of array. The second line contains N space-separated integers A1, A2, ..., AN denoting the elements of the array.<br/><br>
+
+<b>Output:</b><br/>
+Print the maximum sum of the contiguous sub-array in a separate line for each test case.<br/><br>
+
+<b>Constraints:</b><br/>
+1 &leq; T &leq; 110<br/>
+1 &leq; N &leq; 106<br/>
+-107 &leq; A[i] &leq; 107<br/><br>
+
+<b>Example:</b><br/>
+<b>Input</b><br/>
+2<br/>
+5<br/>
+1 2 3 -2 5<br/>
+4<br/>
+-1 -2 -3 -4<br/><br>
+<b>Output</b><br/>
+9<br/>
+-1<br/><br>
+
+<b>Explanation:</b><br/>
+<b>Testcase 1: </b>Max subarray sum is 9 of elements (1, 2, 3, -2, 5) which is a contiguous subarray.<br/></p>
+ 

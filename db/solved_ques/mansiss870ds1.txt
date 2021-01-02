@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{
+printf("akshat dhor! yeh mene pahle video mei likh k dikhaya tha");
+return 0;
+}

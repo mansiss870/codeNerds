@@ -1,0 +1,31 @@
+<p>Samantha and Sam are playing a numbers game. Given a number as a string, no leading zeros,
+determine the sum of all integer values of substrings of the string. For example, if the string is <b>42</b>, the
+substrings are and <b>4,2</b>. Their sum is <b>48</b>.<br>
+Given an integer as a string, sum all of its substrings cast as integers. As the number may become large,
+return the value modulo <b>10<sup>9</sup>+7</b>.<br><br>
+<b>Input Format</b><br>
+A single line containing an integer as a string without leading zeros.<br><br>
+<b>Constraints</b>
+<li><b>1<=n<=2x10<sup>5</sup></b></li><br><br>
+
+<b>Output Format</b><br>
+A single line which is sum of the substrings, <b><I>T%</I>(10<sup>9</sup>+7)</b><br><br>
+
+<b>Sample Input:0</b><br>
+1
+16<br><br>
+
+<b>Sample Output:0</b><br>
+23<br><br>
+
+<b>Explanation:0</b><br>
+The substring of number 16 are 16, 1 and 6 which sums to 23 .<br><br>
+<b>Sample Input 1</b><br>
+1
+123<br><br>
+
+<b>Sample Output:1</b><br>
+164<br><br>
+
+<b>Explanation:1</b><br>
+The sub-strings of 123 are 1, 2, 3, 12, 23, 123 which sums to 164.</p><br>

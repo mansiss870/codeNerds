@@ -1,0 +1,84 @@
+{% extends "login_register_template.html" %}
+{% block content %}
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+      <div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+          <div class="col-lg-5 d-none d-lg-block"><img src="{{ url_for('static',filename='img/registerpage.jpg') }}"></div>
+          <div class="col-lg-7">
+            <div class="p-5">
+              <div class="text-center">
+                <h1 class="h4 text-gray-500 mb-4">Create an Account!</h1>
+              </div>
+              <form class="user" id="registerForm" action='/confirm_registration' onsubmit='validation(this)' method='POST'>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="text" class="form-control " id="firstName" name="firstName" placeholder="First Name" required>
+                  <div class="valid-feedback" >
+                     
+                  </div>
+                  <div class="invalid-feedback" >
+                   invalid name
+
+                  </div>
+                  </div>
+                  
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control " id="lastName" name="lastName" placeholder="Last Name" required>
+                    <div class="valid-feedback" >
+                    
+                  </div>
+                  <div class="invalid-feedback" >
+                    Invalid last name
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control {{ isValidEmail }}" id="inputEmail" name="inputEmail" placeholder="Email Address" required>
+                  <div class="valid-feedback">
+                    
+                    {{ EVMessage }}                     
+
+                  </div>
+                  <div class="invalid-feedback">
+                    
+                    {{ EVMessage }}                     
+
+                  </div>
+
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="password" class="form-control " id="inputPassword" name="inputPassword" placeholder="Password" required>
+                    <div class="valid-feedback" >
+                    
+                      
+                  </div>
+                  <div class="invalid-feedback" >
+                    
+                  Password does not match 
+
+                  </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control " id="repeatPassword" name="repeatPassword" placeholder="Repeat Password" required>
+                    
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-user btn-block" >
+                  Register Account
+                </button>
+              </form>
+              <hr>
+              <div class="text-center">
+                <a class="small" href="/login">Already have an account? Login!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock content %}
